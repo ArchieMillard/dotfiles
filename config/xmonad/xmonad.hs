@@ -288,6 +288,11 @@ myStartupHook = do
         spawnOnce "~/.fehbg &"
         spawnOnce "xmobar /home/archie/.config/xmobar/xmobarrc &"
         spawnOnce "exec lxsession &"
+-- To start Pipewire on Gentoo (OpenRC). Comment out if unneeded.
+-- This option is working on my current setup.
+--	spawnOnce "exec gentoo-pipewire-launcher"
+-- This option is not working on my current setup, but may occasionally be needed.
+--	spawnOnce "wireplumber"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
