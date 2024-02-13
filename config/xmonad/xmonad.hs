@@ -91,7 +91,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_j     ), windows W.focusDown)
 
     -- Move focus to the previous window
-    , ((modm,               xK_k     ), windows W.focusUp  )
+    , ((modm .|. shiftMask, xK_Tab     ), windows W.focusUp  )
 
     -- Move focus to the master window
     , ((modm,               xK_m     ), windows W.focusMaster  )
@@ -369,7 +369,7 @@ help = unlines ["The default modifier key is 'alt'. Default keybindings:",
     "-- quit, or restart",
     "mod-Shift-q  Quit xmonad",
     "mod-q        Restart xmonad",
-    "mod-[1..9]   Switch to workSpace N",
+    "mod-[1..9]   Switch to workSpxmonadace N",
     "",
     "-- Workspaces & screens",
     "mod-Shift-[1..9]   Move client to workspace N",
