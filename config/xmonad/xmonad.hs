@@ -15,7 +15,7 @@ import qualified Data.Map        as M
 import XMonad.Util.SpawnOnce
 import XMonad.Util.Run
 import XMonad.Hooks.ManageDocks
-import XMonad.Hooks.EwmhDesktops
+-- import XMonad.Hooks.EwmhDesktops
 import XMonad.Layout.SimpleFloat
 
 -- The preferred terminal program, which is used in a binding below and by
@@ -139,7 +139,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_m     ), spawn "st htop")
     
     -- Launch pcmanfm file manager
-    , ((modm .|. shiftMask, xK_f     ), spawn "pcmanfm")
+    -- , ((modm .|. shiftMask, xK_f     ), spawn "pcmanfm")
     
     --Launch vim through st
     , ((modm .|. shiftMask, xK_t     ), spawn "st vim")
@@ -160,16 +160,16 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
      , ((modm,               xK_b     ), spawn "doas brightnessctl set 10%+")
     
     -- Use Flameshot to take a screenshot
-     , ((modm .|. shiftMask, xK_s     ), spawn "flameshot gui")
+     -- , ((modm .|. shiftMask, xK_s     ), spawn "flameshot gui")
     
     -- Enable redshift
-     , ((modm,               xK_r     ), spawn " exec /home/archie/.scripts/redshiftenable.sh")
+    -- , ((modm,               xK_r     ), spawn " exec /home/archie/.scripts/redshiftenable.sh")
 
     -- Disable redshift
-     , ((modm .|. shiftMask, xK_r     ), spawn "exec /home/archie/.scripts/redshiftdisable.sh")
+    -- , ((modm .|. shiftMask, xK_r     ), spawn "exec /home/archie/.scripts/redshiftdisable.sh")
 
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
-    , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
+    -- , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
     ]
     ++
 
@@ -284,10 +284,10 @@ myLogHook = return ()
 -- per-workspace layout choices.
 myStartupHook = do
         spawnOnce "setxkbmap gb"
-        spawnOnce "picom &"
-        spawnOnce "~/.fehbg &"
         spawnOnce "xmobar /home/archie/.config/xmobar/xmobarrc &"
-        spawnOnce "exec lxsession &"
+--      spawnOnce "picom &"
+--      spawnOnce "~/.fehbg &"
+--      spawnOnce "exec lxsession &"
 -- To start Pipewire on Gentoo (OpenRC). Comment out if unneeded.
 -- This option is working on my current setup.
 --	spawnOnce "exec gentoo-pipewire-launcher"
@@ -369,7 +369,7 @@ help = unlines ["The default modifier key is 'alt'. Default keybindings:",
     "-- quit, or restart",
     "mod-Shift-q  Quit xmonad",
     "mod-q        Restart xmonad",
-    "mod-[1..9]   Switch to workSpxmonadace N",
+    "mod-[1..9]   Switch to workSpace N",
     "",
     "-- Workspaces & screens",
     "mod-Shift-[1..9]   Move client to workspace N",
