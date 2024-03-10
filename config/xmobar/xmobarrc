@@ -8,11 +8,11 @@ Config {
 
    -- appearance
      font =         "Bitstream Vera Sans Mono 9"
-   , bgColor =      "#151716"
+   , bgColor =      "#000000"
    , fgColor =      "#FFFFFF"
    , position =     Top
    , border =       BottomB
-   , borderColor =  "#151716"
+   , borderColor =  "#FFFFFF"
 
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
