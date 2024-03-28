@@ -1,8 +1,7 @@
 -- Archie Millard
 -- https://www.github.com/ArchieMillard
 -- This is my Xmobar config file.
--- It can be found in my 'xmonad-config' git repo at 'https://github.com/ArchieMillard/xmonad-config' or in my 'rice' git repo at 'https://www.github.com/ArchieMillard/rice'.
--- You can also use my autorice script found at 'https://github.com/ArchieMillard/rice' to deploy this config automatically on Arch Linux.
+-- It can be found in my 'xmonad-config' git repo at 'https://github.com/ArchieMillard/xmonad-config' or in my 'dotfiles' git repo at 'https://github.com/ArchieMillard/dotfiles'.
 
 Config { 
 
