@@ -2,7 +2,7 @@
 -- https://www.github.com/ArchieMillard
 -- This is my Xmonad config file.
 -- It can be found in my 'xmonad-config' git repo at 'https://github.com/ArchieMillard/xmonad-config' or in my 'dotfiles' git repo at 'https://github.com/ArchieMillard/dotfiles'.
-
+--
 -- Imports
 --
 import XMonad
